@@ -1,0 +1,39 @@
+
+.hero {
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.hero__image {
+  width: 100%;
+  height: calc(80vh - 60px);
+  background-size: cover;
+  background-position: center center;
+  margin-bottom: 16px;
+}
+
+.hero__content {
+  color: #333;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  width: 95vw;
+}
+
+.hero__content h1 {
+  text-align: center;
+  font-size: 32px;
+  margin: 8px 0px;
+}
+.hero__content p {
+  text-align: center;
+  padding: 0px 8px;
+}
+
+.spacer {
+  border: solid 1px #333;
+  width: 20%;
+}

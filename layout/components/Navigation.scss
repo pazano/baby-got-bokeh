@@ -1,0 +1,32 @@
+@import '../Global.scss';
+
+.navigation__menu {
+  position: absolute;
+  font-family: $ff-headline;
+  top: 60px;
+  width: 100vw;
+  height: calc(100vh - 60px);
+  padding-top: 16px;
+  background-color: #fefefe;
+  z-index: 10;
+  transition: left 200ms ease-in-out;
+}
+
+.mobile-off {
+  left: -100vw;
+}
+.mobile-on {
+  left: 0px;
+}
+
+.navigation__menu-item {
+  height: 60px;
+  text-align: center;
+}
+.navigation__menu-item a {
+  font-size: 24px;
+  line-height: 60px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #333;
+}

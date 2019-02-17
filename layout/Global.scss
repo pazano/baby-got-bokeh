@@ -1,0 +1,27 @@
+$primary-text: #333;
+$primary-white: #fefefe;
+$copy-size: 18px;
+$ff-title: 'Italiana', 'sans-serif';
+$ff-headline: 'Italiana', 'sans-serif';
+$ff-body: 'PT Sans', 'serif';
+
+@import url('https://fonts.googleapis.com/css?family=Italiana:400|Muli:600|PT+Sans:400,700|Work+Sans:300');
+
+body {
+  color: $primary-text;
+  font-size: $copy-size;
+  font-family: $ff-body;
+  background-color: $primary-white;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: $ff-headline;
+  text-transform: uppercase;
+  padding: 0px;
+  margin: 0px;
+}

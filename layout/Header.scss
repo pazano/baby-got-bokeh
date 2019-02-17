@@ -1,0 +1,21 @@
+@import './Global.scss';
+
+.header {
+  display: grid;
+  grid-template-columns: 60px auto;
+  align-items: center;
+  justify-items: center;
+  width: 100vw;
+}
+.header > * {
+  margin: 4px;
+}
+
+.logo {
+  justify-self: start;
+  padding-left: 16px;
+}
+.logo h1 {
+  font-family: $ff-title;
+  text-transform: none;
+}
