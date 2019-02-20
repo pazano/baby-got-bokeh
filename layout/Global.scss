@@ -1,11 +1,11 @@
-$primary-text: #333;
+$primary-text: #444;
 $primary-white: #fefefe;
 $copy-size: 18px;
-$ff-title: 'Italiana', 'sans-serif';
-$ff-headline: 'Italiana', 'sans-serif';
-$ff-body: 'PT Sans', 'serif';
+$ff-title: 'Work Sans', 'sans-serif';
+$ff-headline: 'Work Sans', 'sans-serif';
+$ff-body: 'Raleway', 'serif';
 
-@import url('https://fonts.googleapis.com/css?family=Italiana:400|Muli:600|PT+Sans:400,700|Work+Sans:300');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400|Work+Sans:200,400');
 
 body {
   color: $primary-text;
@@ -22,6 +22,42 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: $ff-headline;
   text-transform: uppercase;
+  font-weight: 200;
+  line-height: 1.2em;
   padding: 0px;
   margin: 0px;
+}
+
+p {
+  line-height: 1.4em;
+  font-weight: 200;
+}
+
+$tablet-width: 768px;
+$desktop-small: 960px;
+$desktop-medium: 1024px;
+$desktop-large: 1200px;
+
+@mixin bp-tablet {
+  @media all and (min-width: #{$tablet-width}){
+    @content;
+  }
+}
+
+@mixin bp-desktop-small {
+  @media all and (min-width: #{$desktop-small}){
+    @content;
+  }
+}
+
+@mixin bp-desktop-medium {
+  @media all and (min-width: #{$desktop-medium}){
+    @content;
+  }
+}
+
+@mixin bp-desktop-large {
+  @media all and (min-width: #{$desktop-large}){
+    @content;
+  }
 }

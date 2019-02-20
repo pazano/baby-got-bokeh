@@ -3,19 +3,23 @@
 .header {
   display: grid;
   grid-template-columns: 60px auto;
+  grid-template-areas: "navigation logo";
   align-items: center;
   justify-items: center;
   width: 100vw;
-}
-.header > * {
-  margin: 4px;
+
+  @include bp-desktop-small {
+    grid-template-columns: 300px auto;
+    grid-template-areas: "logo navigation";
+  }
 }
 
 .logo {
+  grid-area: logo;
   justify-self: start;
   padding-left: 16px;
 }
 .logo h1 {
   font-family: $ff-title;
-  text-transform: none;
+  font-size: 32px;
 }

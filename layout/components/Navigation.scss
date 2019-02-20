@@ -1,5 +1,18 @@
 @import '../Global.scss';
 
+.navigation {
+  grid-area: navigation;
+  @include bp-desktop-small {
+    justify-self: end;
+  }
+}
+
+.navigation__mobile-menu {
+  @include bp-desktop-small {
+    display: none;
+  }
+}
+
 .navigation__menu {
   position: absolute;
   font-family: $ff-headline;
@@ -10,10 +23,25 @@
   background-color: #fefefe;
   z-index: 10;
   transition: left 200ms ease-in-out;
+
+  @include bp-desktop-small {
+    position: relative;
+    top: 0px;
+    height: 60px;
+    width: calc(100vw - 300px);
+    padding-top: 0px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-end;
+  }
 }
 
 .mobile-off {
   left: -100vw;
+
+  @include bp-desktop-small {
+    left: 0px;
+  }
 }
 .mobile-on {
   left: 0px;
@@ -25,8 +53,14 @@
 }
 .navigation__menu-item a {
   font-size: 24px;
+  font-weight: 200;
   line-height: 60px;
   text-transform: uppercase;
   text-decoration: none;
   color: #333;
+
+  @include bp-desktop-small {
+    font-size: 16px;
+    padding: 0px 16px;
+  }
 }
