@@ -6,7 +6,6 @@ import Link from 'next/link';
 import './Navigation.scss';
 
 const NavigationItem = ({ label, target }) => {
-  console.log(`rendering nav item ${label}`)
   return (
     <div className="navigation__menu-item">
       <Link href={target}>
@@ -31,7 +30,7 @@ class Navigation extends Component {
     e.preventDefault();
     this.setState({
       mobileMenu: !this.state.mobileMenu,
-    }, () => this.state.mobileMenu ? console.log('on') : console.log('off'))
+    })
   }
 
   render() {

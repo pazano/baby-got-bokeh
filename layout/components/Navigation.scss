@@ -33,6 +33,11 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-end;
+    align-items: center;
+  }
+
+  @include bp-desktop-medium {
+    height: 80px;
   }
 }
 
@@ -57,10 +62,15 @@
   line-height: 60px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #333;
+  color: $secondary-grey;
+  transition: all 200ms ease-in-out;
 
   @include bp-desktop-small {
     font-size: 16px;
     padding: 0px 16px;
   }
+}
+
+.navigation__menu-item a:hover {
+  color: $accent-color;
 }
