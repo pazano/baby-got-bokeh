@@ -1,15 +1,7 @@
 import Navigation from './components/Navigation';
-import Link from 'next/link';
+import { VerticalLockup } from './components/Logo';
 
 import './Header.scss';
-
-const Logo = () => (
-  <div className="logo">
-    <Link href="/">
-      <h1>LOVE by DANIELLE</h1>
-    </Link>
-  </div>
-)
 
 const Header = () => {
   const fakeMenu = [
@@ -50,7 +42,7 @@ const Header = () => {
       <Navigation
         menuItems={fakeMenu}
       />
-      <Logo />
+      <VerticalLockup />
     </div>
   )
 }

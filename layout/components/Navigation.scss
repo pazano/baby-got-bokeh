@@ -62,7 +62,7 @@
   line-height: 60px;
   text-transform: uppercase;
   text-decoration: none;
-  color: $secondary-grey;
+  color: $primary-text;
   transition: all 200ms ease-in-out;
 
   @include bp-desktop-small {

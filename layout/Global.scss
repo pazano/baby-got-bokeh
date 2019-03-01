@@ -1,13 +1,18 @@
 $primary-text: #444;
 $primary-white: #fefefe;
-$secondary-grey: #333;
+$knocked-back: #888;
 $accent-color: #5fb7a8;
+
 $copy-size: 18px;
-$ff-title: 'Work Sans', 'sans-serif';
-$ff-headline: 'Work Sans', 'sans-serif';
-$ff-body: 'Raleway', 'serif';
+$ff-title: 'Noto Serif SC', 'sans-serif';
+$ff-headline: 'Noto Serif SC', 'sans-serif';
+$ff-body: 'Open Sans', 'serif';
+
+$max-body-width: 900px;
+
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,400|Work+Sans:200,400');
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif+SC:700|Open+Sans:300');
 
 body {
   color: $primary-text;

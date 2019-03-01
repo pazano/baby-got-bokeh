@@ -1,0 +1,16 @@
+@import '../layout/Global.scss';
+
+.page {
+  display: grid;
+  grid-template-areas:
+    "hero"
+    "content";
+  grid-template-rows:
+    auto auto;
+  justify-items: center;
+}
+
+.content {
+  grid-area: content;
+  max-width: $max-body-width;
+}

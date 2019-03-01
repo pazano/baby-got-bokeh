@@ -1,5 +1,7 @@
+@import '../Global.scss';
 
 .hero {
+  grid-area: hero;
   width: 100%;
   display: flex;
   flex-flow: column nowrap;
@@ -16,11 +18,12 @@
 }
 
 .hero__content {
-  color: #333;
+  color: $primary-text;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   width: 95vw;
+  max-width: $max-body-width;
 }
 
 .hero__content h1 {
